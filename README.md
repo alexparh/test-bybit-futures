@@ -19,14 +19,5 @@ $ npm run start
 ### Use route /createLongLimitOrder
 
 ```bash
-$ curl -X POST http://localhost:3000/createLongLimitOrder \
-  -H "Content-Type: application/json" \
-  -d '{
-    "price": "85000",
-    "qty": "0.01",
-    "symbol": "BTCUSDT",
-    "leverage": "10",
-    "takeProfit": "100000",
-    "stopLoss": "80000",
-  }'
+$ curl -X POST http://localhost:3000/createLongLimitOrder -H "Content-Type: application/json" -d '{"price": "86500", "qty": "0.1", "symbol": "BTCUSDT", "leverage": "10", "takeProfit": "100000", "stopLoss": "80000"}'
 ```
